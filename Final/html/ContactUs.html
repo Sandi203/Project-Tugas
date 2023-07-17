@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restoran Langit Rasa</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="dropmenu">
+        <div style="float: right; width: 80%; height: 100%;">
+            <div style="float: right; padding-right: 10%;height: 100%;">
+                <a class="navbtn" href="Home.html">Home</a>
+                <div class="dropdown">
+                    <button class="dbtn">Makanan & Minuman &nbsp;&#9660;</button>
+                    <div class="dropdown-content">
+                        <a href="Menu.html">Makanan</a>
+                        <a href="Minuman.html">Minuman</a>
+                    </div>
+                </div>
+                <a class="navbtn" href="ContactUs.html">Contact Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="formContent">
+        <h1 style="margin-top: 0;"><br></h1>
+        <div class="form">
+            <center>
+                <h1 class="highlighText" style="padding-top: 5%;">Contact Us</h1>
+            </center>
+            <div class="label">
+                <form name="form" action="" onsubmit="return validateForm()" method="POST">
+                <h1 class="formTitle">Name</h1>
+                <input type="text" class="input" name="name">
+
+                <h1 class="formTitle">Email</h1>
+                <input type="email" class="input" name="email">
+                
+                <h1 class="formTitle">Gender</h1>
+                    <label class="formTitle"><input name="Gender" type="radio" value="Male" style="margin-bottom: 15px;cursor: pointer;">Male</label ><br>
+                    <label class="formTitle"><input name="Gender" type="radio" value="Female" style="cursor: pointer;">Female</label>
+
+                <h1 class="formTitle">Contact Reason</h1>
+                <select name="cs" class="input">
+                    <option value="none">- - -</option>
+                    <option value="true">Request</option>
+                    <option value="true">Business</option>
+                    <option value="true">Other</option>
+                </select>
+                <h1 class="formTitle">Message</h1>
+                <textarea name="msg" cols="30" rows="10" class="input" style="height: 100px;" ></textarea>
+                <center>
+                    <input type="submit" value="Submit" class="submitBtn">
+                </center>
+                </form>       
+            </div>
+        </div>
+        <h1 style="margin-bottom: 0;"><br></h1>
+    </div>
+    
+
+    <div class="footer" style="padding-top: 1px;" >
+        <center>
+            <<h1 class="highlighText">Our Partner</h1>
+            <div style="padding-top: 2%;padding-bottom: 0px;">
+                <img src="../sumber/Gofood-logo.png" class="footerLogo">
+                <img src="../sumber/gbf.jpg" class="footerLogo">
+                 <img src="../sumber/Shopee_Food.jpg" class="footerLogo">
+                <img src="../sumber/te.png"  class="footerLogo">
+            </div>
+            <p class="footerText">Restoran Langit Rasa &#169; 2022 Developed by Restoran Langit Rasa. 
+                All Other Trademarkst And Copyright Are The Property Of Their Respective Owners.</p>
+        </center>
+    </div>
+</body>
+<script type="text/javascript" src="../java/script.js"></script>
+<script type="text/javascript" src="../java/jquery-3.6.0.min.js"></script>
+</html>
